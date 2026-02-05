@@ -1,6 +1,9 @@
 import os
 import qrcode
 
+import datetime
+kajur=datetime.datetime.now()
+
 money1=money2=money3=money4=0 #pls ignore this shiii
 b=m=c=p=0 #ignore this shiii also
 
@@ -71,6 +74,7 @@ print("---------------------Rathi Rastaraunt----------------------")
 print("--------------------------INVOICE--------------------------")
 print("   ITEMS                                       QUANTITY")
 print("="*59)
+
 if b>0:
     print(f"   BURGER                   :                     {b}")
 
@@ -84,8 +88,13 @@ if p>0:
     print(f"   PIZZA                    :                     {p}")
 
 print("="*59)
-print(f"     {total}")
+print(f"   {total}")
 print("*"*59)
 
-print("\t\t   Thankyou for coming")
+print(f"Payment Recieved By {l}")
+
 print("*"*59)
+print("\t\t   Thankyou for coming")
+print("="*59)
+
+print(kajur)
